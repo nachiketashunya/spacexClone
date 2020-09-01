@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    width: 90px;
+}
+
+.container{
+    max-width: 95%;
+    margin: auto;
+}
+
+section {
+    height: 90vh;
+    max-width: 100% !important;
+}
+
+
+/* styling navbar and header */
+header {
+    height: 100px;
+}
+
+#header {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#main-navbar {
+    margin-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 0px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+}
+
+/* styling hamberger */
+.hamberger {
+    position: absolute;
+    right: 30px;
+}
+
+.hamberger:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.hamberger-menu {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+    padding: 20px 10px;
+    z-index: 2;
+    background-color: #000;
+    transform: translateX(300px);
+    transition: transform 0.3s ease-in-out;    
+}
+
+.hamberger-hide-btn {
+    float: right;
+    margin: 20px 20px 0px 20px;
+}
+
+.hamberger-items {
+    margin: 30px 20px 0px 20px;
+}
+
+.hamberger-item {
+    padding: 10px 0px 5px 0px;
+    text-align: right;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+li.media-show {
+    display: none;
+}
+
+.show {
+    position: absolute;
+    transform: translateX(0%);
+    display: block;
+    
+}
+
+/* general styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 700px;
+}
+
+.content h3 {
+    padding: 0 10px;
+    margin-bottom: 25px;
+    font-size: 2.6rem;
+}
+
+.content h4 {
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.content p, .content h5 {
+    padding: 0px 10px;
+}
+
+.btn {
+    margin: 20px 0px 10px 10px;
+    padding: 15px 20px;
+    border: 2px solid #fff;
+    max-width: 150px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    transition: background, color;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+/* styling recent launch section */
+#recent-launch {
+    background: url("img/recent_launch.webp") no-repeat center center/cover;
+}
+
+#recent-launch .content {
+    position: absolute;
+    top: 55vh;
+}
+
+/* styling upcoming launch */
+#upcoming-launch {
+    background: url("img/upcoming_launch.webp") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+#upcoming-launch .content {
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+}
+
+
+/* styling mission complete */
+#mission-complete {
+    background: url("img/mission_complete.webp") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+#mission-complete .content {
+    position: absolute;
+    top: 55vh;
+}
+
+
+/* styling starship */
+#starship {
+    background: url("img/starship.webp") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+#starship .content {
+    position: absolute;
+    top: 55vh;
+}
+
+/* styling human spaceflight section */
+#human-spaceflight {
+    background: url("img/human_spaceflight.webp") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+#human-spaceflight .content{
+    position: absolute;
+    top: 45vh;
+}
+
+/* styling lunar optimized starship */
+#lunar-optimized-starship {
+    background: url("img/lunar.webp") no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+#lunar-optimized-starship .content {
+    position: absolute;
+    top: 45vh;
+    left: 60%;
+}
+
+/* styling footer */
+div.footer {
+    height: 100px;
+    position: relative;
+    bottom: 0px;
+}
+
+.footer-inner {
+    display: flex;
+    flex: 1 1;
+    max-width: 760px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 30px 20px 20px 20px;
+}
+
+.footer-inner ul {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-inner p {
+    color: #ccc;
+    font-size: 0.7rem;
+}
+
+.footer-item {
+    padding: 0px 10px;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+
+/* media query for mobile site */
+@media (max-width: 960px) {
+    #spacex-logo {
+        margin: auto;
+        width: 80px;
+        z-index: 4;
+    }
+
+    #main-navbar {
+        display: none;
+    }
+
+    .nav-link:hover {
+        border: none;
+    }
+
+    /* styling content items */
+    .content h3 {
+        font-size: 1.9rem;
+        color: #f0f0f0;
+        margin-bottom: 10px;
+    }
+
+    .content h4 {
+        font-size: 1.2rem;
+    }
+
+    /* styling recent launch */
+    #recent-launch .content {
+        top: 65vh;
+    }
+
+    /* styling upcoming launch */
+    #upcoming-launch .content {
+        left: 10px;
+        top: 60vh;
+    }
+
+    /* styling mission complete */
+    #mission-complete .content {
+        top: 57vh;
+    }
+
+    /* styling starship */
+    #starship .content {
+        top: 70vh;
+    }
+
+    /* styling human spaceflight */
+    #human-spaceflight .content {
+        top: 60vh;
+    }
+
+
+    /* styling lunar optimized starship */
+    #lunar-optimized-starship .content{
+        left: 10px;
+    }
+
+
+    /* styling hamberger menu */
+    .hamberger-menu {
+        width: 50%;
+    }
+
+    .hamberger-item {
+        font-size: 0.7rem;
+    }
+
+    li.media-show {
+        display: block;
+    }
+
+    /* styling footer */
+    div.footer {
+        height: 100px;
+        bottom: 10px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        padding: 5px 5px;
+    }
+    
+    .footer-inner p{
+        margin-bottom: 10px;
+    }
+
+    .footer-inner .footer-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-item {
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding: 10px 10px;
+    }
+}
